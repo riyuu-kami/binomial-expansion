@@ -27,9 +27,9 @@ $$
 
 ### Step 2: Compute the Derivatives
 
-#### First, we need to compute the \( k \)-th derivative of $f(t) = (1 + t)^n$
+#### First, we need to compute the $k-th$ derivative of $f(t) = (1 + t)^n$
 
-Using the chain rule and power rule, the \( k \)-th derivative of \( (1 + t)^n \) is:
+Using the chain rule and power rule, the $k-th$ derivative of $(1 + t)^n$ is:
 
 $$
 \Huge f^{(k)}(t) = \frac{d^k}{dt^k} (1 + t)^n = \frac{n!}{(n-k)!} (1 + t)^{n-k}
@@ -43,7 +43,7 @@ $$
 
 ### Step 3: Substitute into the Taylor Series
 
-##### Substitute the \( k \)-th derivative into the Taylor series expansion:
+##### Substitute the $k-th$ derivative into the Taylor series expansion:
 
 $$
 \Huge f(t) = \sum_{k=0}^{\infty} \frac{f^{(k)}(0)}{k!} t^k = \sum_{k=0}^{n} \frac{\frac{n!}{(n-k)!}}{k!} t^k
@@ -55,27 +55,27 @@ $$
 \Huge f(t) = \sum_{k=0}^{n} \frac{n!}{(n-k)! k!} t^k = \sum_{k=0}^{n} \binom{n}{k} t^k
 $$
 
-##### Since \( f(t) = (1 + t)^n \), we have:
+##### Since $f(t) = (1 + t)^n$ , we have:
 
 $$
 \Huge (1 + t)^n = \sum_{k=0}^{n} \binom{n}{k} t^k
 $$
 
-### Step 4: Apply to \( (x + y)^n \)
+### Step 4: Apply to $(x + y)^n$
 
-Consider the original binomial expression \( (x + y)^n \). To apply the series expansion, we can write:
+Consider the original binomial expression $(x + y)^n$ . To apply the series expansion, we can write:
 
 $$
 \Huge (x + y)^n = x^n \left(1 + \frac{y}{x}\right)^n
 $$
 
-##### Using the series expansion of \( (1 + t)^n \) with \( t = \frac{y}{x} \):
+##### Using the series expansion of $(1 + t)^n$ with $t = frac{y}{x}$:
 
 $$
 \Huge \left(1 + \frac{y}{x}\right)^n = \sum_{k=0}^{n} \binom{n}{k} \left(\frac{y}{x}\right)^k
 $$
 
-Multiplying both sides by \( x^n \):
+Multiplying both sides by $x^n$
 
 $$
 x^n \left(1 + \frac{y}{x}\right)^n = x^n \sum_{k=0}^{n} \binom{n}{k} \left(\frac{y}{x}\right)^k
