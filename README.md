@@ -1,3 +1,28 @@
+## The binomial theorem states that :
+
+$$
+(a+b) 
+n
+ =∑ 
+k=0
+n
+​
+ ( 
+k
+n
+​
+ )a 
+n−k
+ b 
+k
+$$
+
+
+# let's prove it using the taylor series expansion
+
+
+
+
 ## Proof Using Taylor Series Expansion
 
 Consider the function \( f(t) = (1 + t)^n \).
