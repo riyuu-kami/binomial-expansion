@@ -87,7 +87,7 @@ $$
 
 ### Conclusion
 
-This proof correctly uses the Taylor series expansion of $(1 + t)^n$ , and by substituting $t$ = **$\frac{y}{x}$**, it shows that the expansion of $(x + y)^n$ is exactly:
+This proof correctly uses the Taylor series expansion of $(1 + t)^n$ , and by substituting $t$ = $\frac{y}{x}$, it shows that the expansion of $(x + y)^n$ is exactly:
 
 $$
 \Huge (x + y)^n = \sum_{k=0}^{n} \binom{n}{k} x^{n-k} y^k
