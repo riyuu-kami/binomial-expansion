@@ -7,7 +7,7 @@ $$
 
 
 
-## let's prove it using the taylor series expansion
+# let's prove it using the taylor series expansion
 
 
 
