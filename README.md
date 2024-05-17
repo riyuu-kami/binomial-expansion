@@ -5,12 +5,7 @@ $$
 (a + b)^n = \sum_{k=0}^{n} \binom{n}{k} a^{n-k} b^k
 $$
 
-
-
----
-
-
-
+<br><br><br>
 
 ## Let's prove it by using the taylor series expansion
 
