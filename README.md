@@ -13,7 +13,7 @@ $$
 
 # Proof Using Taylor Series Expansion
 
-Consider the function $ f(t) = (1 + t)^n $.
+Consider the function $f(t) = (1 + t)^n$.
 
 
 ### Step 1: Taylor Series Expansion
