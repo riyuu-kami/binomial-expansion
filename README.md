@@ -13,12 +13,12 @@ $$
 
 # Proof Using Taylor Series Expansion
 
-Consider the function $\( f(t) = (1 + t)^n \)$.
+Consider the function $ f(t) = (1 + t)^n $.
 
 
 ### Step 1: Taylor Series Expansion
 
-The Taylor series expansion of $\( f(t) \) around \( t = 0 \) is given by$: 
+The Taylor series expansion of $\( f(t) \) around \( t = 0 \)$ is given by: 
 
 
 $$
