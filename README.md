@@ -1,675 +1,81 @@
-$Proof Using Taylor Series Expansion
-Consider the function 
-𝑓
-(
-𝑡
-)
-=
-(
-1
-+
-𝑡
-)
-𝑛
-f(t)=(1+t) 
-n
- .
+## Proof Using Taylor Series Expansion
 
-Step 1: Taylor Series Expansion
+Consider the function \( f(t) = (1 + t)^n \).
 
-The Taylor series expansion of 
-𝑓
-(
-𝑡
-)
-f(t) around 
-𝑡
-=
-0
-t=0 is given by:
+### Step 1: Taylor Series Expansion
 
-𝑓
-(
-𝑡
-)
-=
-∑
-𝑘
-=
-0
-∞
-𝑓
-(
-𝑘
-)
-(
-0
-)
-𝑘
-!
-𝑡
-𝑘
-f(t)= 
-k=0
-∑
-∞
-​
-  
-k!
-f 
-(k)
- (0)
-​
- t 
-k
- 
-Step 2: Compute the Derivatives
+The Taylor series expansion of \( f(t) \) around \( t = 0 \) is given by:
 
-First, we need to compute the 
-𝑘
-k-th derivative of 
-𝑓
-(
-𝑡
-)
-=
-(
-1
-+
-𝑡
-)
-𝑛
-f(t)=(1+t) 
-n
- .
+$$
+f(t) = \sum_{k=0}^{\infty} \frac{f^{(k)}(0)}{k!} t^k
+$$
 
-Using the chain rule and power rule, the 
-𝑘
-k-th derivative of 
-(
-1
-+
-𝑡
-)
-𝑛
-(1+t) 
-n
-  is:
+### Step 2: Compute the Derivatives
 
-𝑓
-(
-𝑘
-)
-(
-𝑡
-)
-=
-𝑑
-𝑘
-𝑑
-𝑡
-𝑘
-(
-1
-+
-𝑡
-)
-𝑛
-=
-𝑛
-!
-(
-𝑛
-−
-𝑘
-)
-!
-(
-1
-+
-𝑡
-)
-𝑛
-−
-𝑘
-f 
-(k)
- (t)= 
-dt 
-k
- 
-d 
-k
- 
-​
- (1+t) 
-n
- = 
-(n−k)!
-n!
-​
- (1+t) 
-n−k
- 
-Evaluating this at 
-𝑡
-=
-0
-t=0:
+First, we need to compute the \( k \)-th derivative of \( f(t) = (1 + t)^n \).
 
-𝑓
-(
-𝑘
-)
-(
-0
-)
-=
-𝑛
-!
-(
-𝑛
-−
-𝑘
-)
-!
-f 
-(k)
- (0)= 
-(n−k)!
-n!
-​
- 
-Step 3: Substitute into the Taylor Series
+Using the chain rule and power rule, the \( k \)-th derivative of \( (1 + t)^n \) is:
 
-Substitute the 
-𝑘
-k-th derivative into the Taylor series expansion:
+$$
+f^{(k)}(t) = \frac{d^k}{dt^k} (1 + t)^n = \frac{n!}{(n-k)!} (1 + t)^{n-k}
+$$
 
-𝑓
-(
-𝑡
-)
-=
-∑
-𝑘
-=
-0
-∞
-𝑓
-(
-𝑘
-)
-(
-0
-)
-𝑘
-!
-𝑡
-𝑘
-=
-∑
-𝑘
-=
-0
-𝑛
-𝑛
-!
-(
-𝑛
-−
-𝑘
-)
-!
-𝑘
-!
-𝑡
-𝑘
-f(t)= 
-k=0
-∑
-∞
-​
-  
-k!
-f 
-(k)
- (0)
-​
- t 
-k
- = 
-k=0
-∑
-n
-​
-  
-k!
-(n−k)!
-n!
-​
- 
-​
- t 
-k
- 
+Evaluating this at \( t = 0 \):
+
+$$
+f^{(k)}(0) = \frac{n!}{(n-k)!}
+$$
+
+### Step 3: Substitute into the Taylor Series
+
+Substitute the \( k \)-th derivative into the Taylor series expansion:
+
+$$
+f(t) = \sum_{k=0}^{\infty} \frac{f^{(k)}(0)}{k!} t^k = \sum_{k=0}^{n} \frac{\frac{n!}{(n-k)!}}{k!} t^k
+$$
+
 This simplifies to:
 
-𝑓
-(
-𝑡
-)
-=
-∑
-𝑘
-=
-0
-𝑛
-𝑛
-!
-(
-𝑛
-−
-𝑘
-)
-!
-𝑘
-!
-𝑡
-𝑘
-=
-∑
-𝑘
-=
-0
-𝑛
-(
-𝑛
-𝑘
-)
-𝑡
-𝑘
-f(t)= 
-k=0
-∑
-n
-​
-  
-(n−k)!k!
-n!
-​
- t 
-k
- = 
-k=0
-∑
-n
-​
- ( 
-k
-n
-​
- )t 
-k
- 
-Since 
-𝑓
-(
-𝑡
-)
-=
-(
-1
-+
-𝑡
-)
-𝑛
-f(t)=(1+t) 
-n
- , we have:
+$$
+f(t) = \sum_{k=0}^{n} \frac{n!}{(n-k)! k!} t^k = \sum_{k=0}^{n} \binom{n}{k} t^k
+$$
 
-(
-1
-+
-𝑡
-)
-𝑛
-=
-∑
-𝑘
-=
-0
-𝑛
-(
-𝑛
-𝑘
-)
-𝑡
-𝑘
-(1+t) 
-n
- = 
-k=0
-∑
-n
-​
- ( 
-k
-n
-​
- )t 
-k
- 
-Step 4: Apply to 
-(
-𝑥
-+
-𝑦
-)
-𝑛
-(x+y) 
-n
- 
+Since \( f(t) = (1 + t)^n \), we have:
 
-Consider the original binomial expression 
-(
-𝑥
-+
-𝑦
-)
-𝑛
-(x+y) 
-n
- . To apply the series expansion, we can write:
+$$
+(1 + t)^n = \sum_{k=0}^{n} \binom{n}{k} t^k
+$$
 
-(
-𝑥
-+
-𝑦
-)
-𝑛
-=
-𝑥
-𝑛
-(
-1
-+
-𝑦
-𝑥
-)
-𝑛
-(x+y) 
-n
- =x 
-n
- (1+ 
-x
-y
-​
- ) 
-n
- 
-Using the series expansion of 
-(
-1
-+
-𝑡
-)
-𝑛
-(1+t) 
-n
-  with 
-𝑡
-=
-𝑦
-𝑥
-t= 
-x
-y
-​
- :
+### Step 4: Apply to \( (x + y)^n \)
 
-(
-1
-+
-𝑦
-𝑥
-)
-𝑛
-=
-∑
-𝑘
-=
-0
-𝑛
-(
-𝑛
-𝑘
-)
-(
-𝑦
-𝑥
-)
-𝑘
-(1+ 
-x
-y
-​
- ) 
-n
- = 
-k=0
-∑
-n
-​
- ( 
-k
-n
-​
- )( 
-x
-y
-​
- ) 
-k
- 
-Multiplying both sides by 
-𝑥
-𝑛
-x 
-n
- :
+Consider the original binomial expression \( (x + y)^n \). To apply the series expansion, we can write:
 
-𝑥
-𝑛
-(
-1
-+
-𝑦
-𝑥
-)
-𝑛
-=
-𝑥
-𝑛
-∑
-𝑘
-=
-0
-𝑛
-(
-𝑛
-𝑘
-)
-(
-𝑦
-𝑥
-)
-𝑘
-x 
-n
- (1+ 
-x
-y
-​
- ) 
-n
- =x 
-n
-  
-k=0
-∑
-n
-​
- ( 
-k
-n
-​
- )( 
-x
-y
-​
- ) 
-k
- 
-(
-𝑥
-+
-𝑦
-)
-𝑛
-=
-∑
-𝑘
-=
-0
-𝑛
-(
-𝑛
-𝑘
-)
-𝑥
-𝑛
-(
-𝑦
-𝑥
-)
-𝑘
-=
-∑
-𝑘
-=
-0
-𝑛
-(
-𝑛
-𝑘
-)
-𝑥
-𝑛
-−
-𝑘
-𝑦
-𝑘
-(x+y) 
-n
- = 
-k=0
-∑
-n
-​
- ( 
-k
-n
-​
- )x 
-n
- ( 
-x
-y
-​
- ) 
-k
- = 
-k=0
-∑
-n
-​
- ( 
-k
-n
-​
- )x 
-n−k
- y 
-k
- 
-Conclusion
-This proof correctly uses the Taylor series expansion of 
-(
-1
-+
-𝑡
-)
-𝑛
-(1+t) 
-n
- , and by substituting 
-𝑡
-=
-𝑦
-𝑥
-t= 
-x
-y
-​
- , it shows that the expansion of 
-(
-𝑥
-+
-𝑦
-)
-𝑛
-(x+y) 
-n
-  is exactly:
+$$
+(x + y)^n = x^n \left(1 + \frac{y}{x}\right)^n
+$$
 
-(
-𝑥
-+
-𝑦
-)
-𝑛
-=
-∑
-𝑘
-=
-0
-𝑛
-(
-𝑛
-𝑘
-)
-𝑥
-𝑛
-−
-𝑘
-𝑦
-𝑘
-(x+y) 
-n
- = 
-k=0
-∑
-n
-​
- ( 
-k
-n
-​
- )x 
-n−k
- y 
-k
- 
-Thus, the Binomial Theorem is proven using the method of Taylor series expansion. This method is indeed correct and valid.$
+Using the series expansion of \( (1 + t)^n \) with \( t = \frac{y}{x} \):
+
+$$
+\left(1 + \frac{y}{x}\right)^n = \sum_{k=0}^{n} \binom{n}{k} \left(\frac{y}{x}\right)^k
+$$
+
+Multiplying both sides by \( x^n \):
+
+$$
+x^n \left(1 + \frac{y}{x}\right)^n = x^n \sum_{k=0}^{n} \binom{n}{k} \left(\frac{y}{x}\right)^k
+$$
+
+$$
+(x + y)^n = \sum_{k=0}^{n} \binom{n}{k} x^n \left(\frac{y}{x}\right)^k = \sum_{k=0}^{n} \binom{n}{k} x^{n-k} y^k
+$$
+
+### Conclusion
+
+This proof correctly uses the Taylor series expansion of \( (1 + t)^n \), and by substituting \( t = \frac{y}{x} \), it shows that the expansion of \( (x + y)^n \) is exactly:
+
+$$
+(x + y)^n = \sum_{k=0}^{n} \binom{n}{k} x^{n-k} y^k
+$$
+
+Thus, the Binomial Theorem is proven using the method of Taylor series expansion. This method is indeed correct and valid.
