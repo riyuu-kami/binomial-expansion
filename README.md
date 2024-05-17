@@ -1,5 +1,5 @@
-### This C++ program employs the binomial theorem to expand the expression (a+b)^n for a positive integer exponent 'n'. It calculates coefficients using Pascal's triangle or the combinatorial formula C(n, k), then constructs and displays the expanded expression in the format (a+b)^n = term1 + term2 + ... + term(n+1), with each term containing appropriate powers of 'a' and 'b' and their respective coefficients.
-
+## This C++ program employs the binomial theorem to expand the expression (a+b)^n for a positive integer exponent 'n'. It calculates coefficients using Pascal's triangle or the combinatorial formula C(n, k), then constructs and displays the expanded expression in the format (a+b)^n = term1 + term2 + ... + term(n+1), with each term containing appropriate powers of 'a' and 'b' and their respective coefficients.
+<br><br>
 
 # The binomial theorem states that :
 <br>
