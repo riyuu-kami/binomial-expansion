@@ -7,9 +7,9 @@ $$
 
 ---
 
-## let's prove it using the taylor series expansion
+## Let's prove it by using the taylor series expansion
 
---- 
+
 
 # Proof Using Taylor Series Expansion
 
