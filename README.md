@@ -69,7 +69,7 @@ $$
 \Huge (x + y)^n = x^n \left(1 + \frac{y}{x}\right)^n
 $$
 
-##### Using the series expansion of $(1 + t)^n$ with $t$ = \frac{y}{x}:
+##### Using the series expansion of $(1 + t)^n$ with $t$ = **$\frac{y}{x}$**:
 
 $$
 \Huge \left(1 + \frac{y}{x}\right)^n = \sum_{k=0}^{n} \binom{n}{k} \left(\frac{y}{x}\right)^k
@@ -87,7 +87,7 @@ $$
 
 ### Conclusion
 
-This proof correctly uses the Taylor series expansion of $(1 + t)^n$ , and by substituting $t$ = $\frac{y}{x}$ , it shows that the expansion of $(x + y)^n$ is exactly:
+This proof correctly uses the Taylor series expansion of $(1 + t)^n$ , and by substituting $t$ = **$\frac{y}{x}$**, it shows that the expansion of $(x + y)^n$ is exactly:
 
 $$
 \Huge (x + y)^n = \sum_{k=0}^{n} \binom{n}{k} x^{n-k} y^k
