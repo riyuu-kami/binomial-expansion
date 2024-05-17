@@ -27,7 +27,7 @@ $$
 
 ### Step 2: Compute the Derivatives
 
-#### First, we need to compute the \( k \)-th derivative of \( f(t) = (1 + t)^n \).
+#### First, we need to compute the \( k \)-th derivative of $f(t) = (1 + t)^n$
 
 Using the chain rule and power rule, the \( k \)-th derivative of \( (1 + t)^n \) is:
 
@@ -35,7 +35,7 @@ $$
 \Huge f^{(k)}(t) = \frac{d^k}{dt^k} (1 + t)^n = \frac{n!}{(n-k)!} (1 + t)^{n-k}
 $$
 
-#### Evaluating this at \( t = 0 \):
+#### Evaluating this at $( t = 0)$:
 
 $$
 \Huge f^{(k)}(0) = \frac{n!}{(n-k)!}
