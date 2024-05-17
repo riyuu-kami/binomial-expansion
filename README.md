@@ -9,7 +9,7 @@ $$
 
 ## Let's prove it by using the taylor series expansion
 
-
+<br>
 
 # Proof Using Taylor Series Expansion
 
