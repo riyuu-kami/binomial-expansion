@@ -8,13 +8,9 @@ $$
 
 
 # let's prove it using the taylor series expansion
-
-
-
-
-
-
-
+ \hspace
+  \hspace
+   \hspace
 
 ## Proof Using Taylor Series Expansion
 
