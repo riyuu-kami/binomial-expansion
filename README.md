@@ -1,4 +1,4 @@
-## The binomial theorem states that :
+# The binomial theorem states that :
 
 
 $$
@@ -7,11 +7,11 @@ $$
 
 ---
 
-# let's prove it using the taylor series expansion
+## let's prove it using the taylor series expansion
 
 --- 
 
-## Proof Using Taylor Series Expansion
+# Proof Using Taylor Series Expansion
 
 Consider the function \( f(t) = (1 + t)^n \).
 
