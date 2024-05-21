@@ -1,3 +1,5 @@
+// this code does not work using the generalized binomial theorem, so inputting an n that is not a natural number (excluding 0) will result in an empty output
+
 #include <iostream>
 #include <string>
 
