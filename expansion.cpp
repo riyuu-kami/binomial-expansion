@@ -5,20 +5,25 @@
 
 using namespace std;
 
-int factorial(int n) {
+long long int factorial(long long int n) {
     if (n == 0 || n == 1)
         return 1;
     return n * factorial(n - 1);
 }
 
-int nCr(int n, int k) {
-    return factorial(n) / (factorial(k) * factorial(n - k));
+long long int nCr(long long int n, long long int k) {
+    long long int result = 1;
+    for (long long int i = 1; i <= k; ++i) {
+        result *= (n - i + 1);
+        result /= i;
+    }
+    return result;
 }
 
-string BinomialTheorem(int n) {
+string BinomialTheorem(long long int n) {
     string result = "";
-    for (int k = 0; k <= n; k++) {
-        int coefficient = nCr(n, k);
+    for (long long int k = 0; k <= n; k++) {
+        long long int coefficient = nCr(n, k);
         if (coefficient != 1) {
             result += to_string(coefficient);
         }
@@ -48,12 +53,12 @@ string BinomialTheorem(int n) {
 }
 
 int main() {
-    int n;
+    long long int n;
     cout << "Enter the value of n: ";
     cin >> n;
 
     string expansion = BinomialTheorem(n);
-    cout << "Binomial Theorem Expansion: " << expansion << endl;
+    cout << "Expansion: " << expansion << endl;
 
     return 0;
 }
