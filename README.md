@@ -72,7 +72,7 @@ $$
 \Huge (x + y)^n = x^n \left(1 + \frac{y}{x}\right)^n
 $$
 
-##### Using the series expansion of $(1 + t)^n$ with $t$ = **$\frac{y}{x}$**:
+##### Using the series expansion of $(1 + t)^n$ with $t = \frac{y}{x}$:
 
 $$
 \Huge \left(1 + \frac{y}{x}\right)^n = \sum_{k=0}^{n} \binom{n}{k} \left(\frac{y}{x}\right)^k
@@ -83,7 +83,7 @@ Multiplying both sides by $x^n$
 $$
 \Huge x^n \left(1 + \frac{y}{x}\right)^n = x^n \sum_{k=0}^{n} \binom{n}{k} \left(\frac{y}{x}\right)^k
 $$
-<br>
+
 $$
 \Huge (x + y)^n = \sum_{k=0}^{n} \binom{n}{k} x^n \left(\frac{y}{x}\right)^k = \sum_{k=0}^{n} \binom{n}{k} x^{n-k} y^k
 $$
